@@ -1,0 +1,54 @@
+/* SwordAnimation.css */
+
+.sword-animation-container {
+    position: relative;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+@font-face {
+    font-family: 'NeonTokyo';
+    src: url('../../fonts/neo-tokyo.ttf') format('truetype'); /* Ensure the path is correct */
+    font-weight: normal; /* Optional: Specify weight if applicable */
+    font-style: normal; /* Optional: Specify style if applicable */
+}
+
+.sliced-title {
+    position: absolute; /* Position over the sword */
+    font-size: 12vw; /* Responsive font size */
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    font-family: 'NeonTokyo';
+    color: #FF6EC7;
+    opacity: 0.5;
+    text-align: center;
+    pointer-events: none; /* Disable pointer events on title */
+}
+
+.sliced-title span {
+    display: inline-block; /* Allow individual styling */
+}
+
+.upper-half {
+    position: relative;
+}
+
+.lower-half {
+    position: relative;
+    transition: transform 0.8s ease;
+}
+
+.sliced .lower-half {
+    transform: translateY(100px); /* Fall down animation */
+}
+
+.sword {
+    position: absolute;
+    top: 50%; /* Center the sword vertically */
+    left: 50%; /* Center the sword horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the dimensions of the sword */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Ensure visibility */
+    pointer-events: none; /* Disable pointer events on the sword */
+}

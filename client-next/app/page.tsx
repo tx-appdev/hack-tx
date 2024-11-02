@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
 
 import "./globals.css";
+import CherryBlossomPetals from "./components/CherryBlossom";
+import SwordAnimation from "./components/SwordAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,6 +85,10 @@ export default function Home() {
           <h1>
             This is our submission for Hack TX 2024!
           </h1>
+        </section>
+        <section className="hero bg-[#9900FF]">
+          <SwordAnimation />
+          <CherryBlossomPetals />
         </section>
       </div>
     </>

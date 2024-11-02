@@ -112,3 +112,10 @@ nav {
     font-weight: normal; /* Optional: Specify weight if applicable */
     font-style: normal; /* Optional: Specify style if applicable */
 }
+
+@font-face {
+    font-family: 'NeonTokyo';
+    src: url('../fonts/neo-tokyo.ttf') format('truetype'); /* Make sure the path is correct */
+    font-weight: normal; /* Optional: Specify weight if applicable */
+    font-style: normal; /* Optional: Specify style if applicable */
+}

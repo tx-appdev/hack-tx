@@ -2,11 +2,6 @@ import CherryBlossomPetals from "./CherryBlossom";
 
 export default function Home() {
   return (
-<<<<<<< Updated upstream
-    <div>
-      Hello World
-    </div>
-=======
     <>
       <div className="container">
         <section className="hero bg-[#9900FF]">
@@ -51,6 +46,5 @@ export default function Home() {
         </section>
       </div>
     </>
->>>>>>> Stashed changes
   );
 }

@@ -81,15 +81,16 @@ export default function Home() {
             <img src="img-1.jpg" alt="" />
           </div>
         </section>
-        <section className="outro">
+        <section className="outro flex">
           <h1>
             This is our submission for Hack TX 2024!
           </h1>
         </section>
-        <section className="hero bg-[#9900FF]">
-            {/* <SwordAnimation /> */}
+        <div>HI</div>
+        {/* <section className="hero bg-[#9900FF] top-28">
+            {/* <SwordAnimation />
             <CherryBlossomPetals />
-        </section>
+        </section> */}
       </div>
     </>
   );

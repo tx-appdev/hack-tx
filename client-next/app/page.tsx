@@ -91,25 +91,11 @@ export default function Home() {
           <h1>section 2</h1>
         </section>
         
-        <section className="about-img h-[200vh]">
-          <img src="img-2.jpg" alt="" />
-          <div className="blocks-container top">
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-          </div>
-          <div className="blocks-container bottom">
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-            <div className="blocks-row"></div>
-          </div>
-        </section>
         
         <section className="footer bg-[#00CCFF]">
           <h1>section 3</h1>
         <nav><a href="#">hacktx</a></nav>
+        </section>
         <section className="wrapper">
           <h1>Hack TX 2024</h1>
 

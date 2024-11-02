@@ -65,6 +65,29 @@ export default function Home() {
 
   return (
     <>
+      <nav><a href="#">hacktx</a></nav>
+      <section className="wrapper">
+        <h1>Hack TX 2024</h1>
+
+        <div className="card" id="card-1">
+          <img src="img-1.jpg" alt="" />
+        </div>
+        <div className="card" id="card-2">
+          <img src="img-1.jpg" alt="" />
+        </div>
+        <div className="card" id="card-3">
+          <img src="img-1.jpg" alt="" />
+        </div>
+        <div className="card" id="card-4">
+          <img src="img-1.jpg" alt="" />
+        </div>
+      </section>
+      <section className="outro">
+        <h1>
+          This is our submission for Hack TX 2024!
+        </h1>
+      </section>
+      
       <div className="container">
         <section className="hero bg-[#9900FF]">
           <SwordAnimation />
@@ -89,33 +112,6 @@ export default function Home() {
         
         <section className="about bg-[#EDA92D]">
           <h1>section 2</h1>
-        </section>
-        
-        
-        <section className="footer bg-[#00CCFF]">
-          <h1>section 3</h1>
-        <nav><a href="#">hacktx</a></nav>
-        </section>
-        <section className="wrapper">
-          <h1>Hack TX 2024</h1>
-
-          <div className="card" id="card-1">
-            <img src="img-1.jpg" alt="" />
-          </div>
-          <div className="card" id="card-2">
-            <img src="img-1.jpg" alt="" />
-          </div>
-          <div className="card" id="card-3">
-            <img src="img-1.jpg" alt="" />
-          </div>
-          <div className="card" id="card-4">
-            <img src="img-1.jpg" alt="" />
-          </div>
-        </section>
-        <section className="outro">
-          <h1>
-            This is our submission for Hack TX 2024!
-          </h1>
         </section>
       </div>
     </>

@@ -13,6 +13,10 @@ html, body {
     height: 100%;
 }
 
+.wrapper {
+    width: 100%;
+}
+
 section {
     position: relative;
     width: 100%;
@@ -38,3 +42,34 @@ h1 {
     color: black;
     opacity: 0.5;
 }
+
+.block {
+    width: 100%;
+    height: 100%;
+    transition: opacity 100ms;
+}
+
+.blocks-container.top .blocks-row .block {
+    opacity: 1;
+}
+
+.blocks-container.bottom .blocks-row .block {
+    opacity: 0;
+}
+
+.hero-img .blocks-container.top .blocks-row .block {
+    background: #757637;
+}
+
+.hero-img .blocks-container.bottom .blocks-row .block {
+    background: #375955;
+}
+
+.about-img .blocks-container.top .blocks-row .block {
+    background: #375955;
+}
+
+.about-img .blocks-container.bottom .blocks-row .block {
+    background: #757637;
+}
+

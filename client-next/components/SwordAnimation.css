@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'NeonTokyo';
-    src: url('../../fonts/neo-tokyo.ttf') format('truetype'); /* Ensure the path is correct */
+    src: url('../fonts/neo-tokyo.ttf') format('truetype'); /* Ensure the path is correct */
     font-weight: normal; /* Optional: Specify weight if applicable */
     font-style: normal; /* Optional: Specify style if applicable */
 }

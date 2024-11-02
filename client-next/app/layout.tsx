@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SmoothScroll from "./components/ScrollTrigger";
+import SmoothScroll from "../components/ScrollTrigger";
 
 export const metadata: Metadata = {
   title: "Hack TX 2024",

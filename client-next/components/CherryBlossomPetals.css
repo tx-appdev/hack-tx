@@ -1,0 +1,69 @@
+/* CherryBlossomPetals.css */
+.petal {
+  position: absolute;
+  top: -50px; /* Start above the viewport */
+  width: 10px; /* Width of the petal */
+  height: 10px; /* Height of the petal */
+  background-color: pink; /* Petal color */
+  border-radius: 0%; /* Make it circular */
+  opacity: 0.8;
+  animation: fall linear infinite; /* Animation to make petals fall */
+}
+
+/* Keyframes for falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0); /* Start position */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateY(100vh); /* Move down */
+    opacity: 0; /* Fade out */
+  }
+}
+
+/* Styles for the container */
+.petals-container {
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Randomize petal positions and animations */
+.petal:nth-child(1) { left: 10%; animation-duration: 4s; animation-delay: 0s; }
+.petal:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
+.petal:nth-child(3) { left: 30%; animation-duration: 5s; animation-delay: 2s; }
+.petal:nth-child(4) { left: 40%; animation-duration: 7s; animation-delay: 3s; }
+.petal:nth-child(5) { left: 50%; animation-duration: 4.5s; animation-delay: 1.5s; }
+.petal:nth-child(6) { left: 60%; animation-duration: 5.5s; animation-delay: 2.5s; }
+.petal:nth-child(7) { left: 70%; animation-duration: 6.5s; animation-delay: 3.5s; }
+.petal:nth-child(8) { left: 80%; animation-duration: 5s; animation-delay: 0.5s; }
+.petal:nth-child(9) { left: 90%; animation-duration: 4s; animation-delay: 1.2s; }
+.petal:nth-child(10) { left: 65%; animation-duration: 6.2s; animation-delay: 0.9s; }
+.petal:nth-child(11) { left: 70%; animation-duration: 3.8s; animation-delay: 0.1s; }
+.petal:nth-child(12) { left: 75%; animation-duration: 5.8s; animation-delay: 0.5s; }
+.petal:nth-child(13) { left: 80%; animation-duration: 4.6s; animation-delay: 0.3s; }
+.petal:nth-child(14) { left: 85%; animation-duration: 5.9s; animation-delay: 0.6s; }
+.petal:nth-child(15) { left: 90%; animation-duration: 4.3s; animation-delay: 0.8s; }
+.petal:nth-child(16) { left: 15%; animation-duration: 6s; animation-delay: 0.3s; }
+.petal:nth-child(17) { left: 10%; animation-duration: 5s; animation-delay: 0.1s; }
+  .petal:nth-child(18) { left: 20%; animation-duration: 4.5s; animation-delay: 0.2s; }
+  .petal:nth-child(19) { left: 25%; animation-duration: 5.5s; animation-delay: 0.4s; }
+  .petal:nth-child(20) { left: 30%; animation-duration: 3.5s; animation-delay: 0.6s; }
+  .petal:nth-child(21) { left: 35%; animation-duration: 6.5s; animation-delay: 0.3s; }
+  .petal:nth-child(22) { left: 40%; animation-duration: 4s; animation-delay: 0.5s; }
+  .petal:nth-child(23) { left: 45%; animation-duration: 5s; animation-delay: 0.7s; }
+  .petal:nth-child(24) { left: 50%; animation-duration: 3s; animation-delay: 0.2s; }
+  .petal:nth-child(25) { left: 55%; animation-duration: 4.2s; animation-delay: 0.8s; }
+  .petal:nth-child(26) { left: 60%; animation-duration: 5.1s; animation-delay: 0.4s; }
+  .petal:nth-child(27) { left: 65%; animation-duration: 6.2s; animation-delay: 0.9s; }
+  .petal:nth-child(28) { left: 70%; animation-duration: 3.8s; animation-delay: 0.1s; }
+  .petal:nth-child(29) { left: 75%; animation-duration: 5.8s; animation-delay: 0.5s; }
+  .petal:nth-child(30) { left: 80%; animation-duration: 4.6s; animation-delay: 0.3s; }
+  .petal:nth-child(31) { left: 85%; animation-duration: 5.9s; animation-delay: 0.6s; }
+  .petal:nth-child(32) { left: 90%; animation-duration: 4.3s; animation-delay: 0.8s; }
+  .petal:nth-child(33) { left: 95%; animation-duration: 5.3s; animation-delay: 0.2s; }
+  .petal:nth-child(34) { left: 80%; animation-duration: 3.9s; animation-delay: 0.7s; }
+  .petal:nth-child(35) { left: 75%; animation-duration: 4.1s; animation-delay: 0.4s; }
+  .petal:nth-child(36) { left: 70%; animation-duration: 6.0s; animation-delay: 0.9s; }
+/* Add more petals as needed */

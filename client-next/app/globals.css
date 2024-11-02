@@ -2,3 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Press Start";
+    background: black;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    font-size: 24vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 1200vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+    will-change: transform;
+}
+
+.card {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#card-1 {
+    top: 50%;
+    left: 20%;
+}
+
+#card-2 {
+    top: 35%;
+    left: 40%;
+}
+
+#card-3 {
+    top: 45%;
+    left: 60%;
+}
+
+#card-4 {
+    top: 40%;
+    left: 80%;
+}
+
+.outro {
+    position: absolute;
+    top: 150vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.outro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Press Start';
+    src: url('../fonts/PressStart2P-vaV7.ttf') format('truetype'); /* Make sure the path is correct */
+    font-weight: normal; /* Optional: Specify weight if applicable */
+    font-style: normal; /* Optional: Specify style if applicable */
+}

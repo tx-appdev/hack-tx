@@ -1,0 +1,66 @@
+/* SwordAnimation.css */
+
+.sword-animation-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .sliced-title {
+    position: relative;
+    font-size: 4rem;
+    color: #FF6EC7;
+    opacity: 0.8;
+    font-family: 'NeonTokyo', sans-serif;
+  }
+  
+  .sliced-title span {
+    display: inline-block;
+  }
+  
+  .upper-half {
+    position: relative;
+  }
+  
+  .lower-half {
+    position: relative;
+    transition: transform 0.8s ease;
+  }
+  
+  .sliced .lower-half {
+    transform: translateY(100px); /* Fall down animation */
+  }
+  
+  .sword {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .sword-swing {
+    animation: swordSwing 1s forwards;
+    opacity: 1;
+  }
+  
+  @keyframes swordSwing {
+    0% {
+      top: -100px;
+      opacity: 0;
+    }
+    10% {
+      top: 20px;
+      opacity: 1;
+    }
+    50% {
+      top: 60px;
+      opacity: 1;
+    }
+    100% {
+      top: 150px;
+      opacity: 0;
+    }
+  }
+  

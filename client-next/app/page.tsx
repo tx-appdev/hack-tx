@@ -1,5 +1,6 @@
 import CherryBlossomPetals from "./CherryBlossom";
-
+import SwordAnimation from "./SwordAnimation";
+import "./SwordAnimation.css"
 export default function Home() {
   return (
     <>
@@ -7,7 +8,9 @@ export default function Home() {
         <section className="hero bg-[#9900FF]">
           <h1>section 1</h1>
           <CherryBlossomPetals />
+          <SwordAnimation /> {/* Add the SwordAnimation component here */}
         </section>
+        
         <section className="hero-img h-[200vh]">
           <img src="img-1.jpg" alt="" />
           <div className="blocks-container top">
@@ -23,11 +26,13 @@ export default function Home() {
             <div className="blocks-row"></div>
           </div>
         </section>
+        
         <section className="about bg-[#EDA92D]">
           <h1>section 2</h1>
         </section>
+        
         <section className="about-img h-[200vh]">
-        <img src="img-2.jpg" alt="" />
+          <img src="img-2.jpg" alt="" />
           <div className="blocks-container top">
             <div className="blocks-row"></div>
             <div className="blocks-row"></div>
@@ -41,6 +46,7 @@ export default function Home() {
             <div className="blocks-row"></div>
           </div>
         </section>
+        
         <section className="footer bg-[#00CCFF]">
           <h1>section 3</h1>
         </section>

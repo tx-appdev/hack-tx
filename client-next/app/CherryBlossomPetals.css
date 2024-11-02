@@ -2,10 +2,10 @@
 .petal {
     position: absolute;
     top: -50px; /* Start above the viewport */
-    width: 20px; /* Width of the petal */
+    width: 10px; /* Width of the petal */
     height: 10px; /* Height of the petal */
     background-color: pink; /* Petal color */
-    border-radius: 50%; /* Make it circular */
+    border-radius: 0%; /* Make it circular */
     opacity: 0.8;
     animation: fall linear infinite; /* Animation to make petals fall */
   }

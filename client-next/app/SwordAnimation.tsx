@@ -1,26 +1,33 @@
 "use client";
-import React, { useState } from 'react';
-import './SwordAnimation.css'; // Add a CSS file to style the sword and text animations
+import React, { useState, useEffect } from "react";
+import "./SwordAnimation.css";
 
 export default function SwordAnimation() {
   const [sliced, setSliced] = useState(false);
-
+  const [showSword, setShowSword] = useState(true);
+  // Define the function that triggers the animation
   const handleSlice = () => {
     setSliced(true);
-    // Reset animation after a delay to allow replay on next click
-    setTimeout(() => setSliced(false), 2000);
   };
 
+  // Use `useEffect` to call `handleSlice` when the component mounts
+  useEffect(() => {
+    handleSlice();
+    setTimeout(() => {
+      setShowSword(false); // Hides the sword GIF after 1 second (adjust as needed)
+    }, 1000); 
+  }, []); // Empty dependency array ensures this runs only on mount
+
   return (
-    <div className="sword-animation-container" onClick={handleSlice}>
-      <h1 className={`sliced-title ${sliced ? 'sliced' : ''}`}>
-        <span className="upper-half">Samurai</span>
-        <span className="lower-half">Title</span>
-      </h1>
+    <div className="sword-animation-container">
+      <div className={`sliced-title ${sliced ? "sliced" : ""}`}>
+        <span className="upper-half">game</span>
+        <span className="lower-half">creator</span>
+      </div>
       <img
-        src="slice_effect.gif" // replace with the path to your sword image or animation
+        src="slice_effect.gif" // Ensure this is the correct path to your sword image
         alt="Sword"
-        className={`sword ${sliced ? 'sword-swing' : ''}`}
+        className='sword'
       />
     </div>
   );

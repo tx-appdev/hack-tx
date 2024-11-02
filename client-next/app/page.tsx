@@ -6,9 +6,8 @@ export default function Home() {
     <>
       <div className="container">
         <section className="hero bg-[#9900FF]">
-          <h1>section 1</h1>
+          <SwordAnimation />
           <CherryBlossomPetals />
-          <SwordAnimation /> {/* Add the SwordAnimation component here */}
         </section>
         
         <section className="hero-img h-[200vh]">

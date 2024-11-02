@@ -2,3 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< Updated upstream
+=======
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'NeonTokyo';
+    src: url('/neo-tokyo.ttf') format('truetype'); /* Make sure the path is correct */
+    font-weight: normal; /* Optional: Specify weight if applicable */
+    font-style: normal; /* Optional: Specify style if applicable */
+  }
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12vw;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    font-family: 'NeonTokyo';
+    color: #FF6EC7;
+    opacity: 0.5;
+    text-align: center;
+
+}
+>>>>>>> Stashed changes

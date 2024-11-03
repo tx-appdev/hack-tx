@@ -4,10 +4,10 @@ const Hero = () => {
         <div className="hero min-h-[100vh] max-w-[1200px]  my-0 mx-auto flex items-center justify-center">
             <CherryBlossomPetals />
             <div className="text-wrapper">
-                <h1 className="font-[Retro] text-[8em] text-slate-400">
+                <h1 className="font-[Retro] text-[8em] text-[#4D3B64]">
                     INDIE STUDIO
                 </h1>
-                <h2 className="font-[Retro] text-[2.5em] text-slate-600">
+                <h2 className="font-[Retro] text-[2.5em] text-[#] text-center">
                     A generative AI solution to indie<br />
                     game development.
                 </h2>

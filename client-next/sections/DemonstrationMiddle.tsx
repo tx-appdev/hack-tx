@@ -12,7 +12,7 @@ const DemonstrationMiddle = () => {
                     character in a custom retro kingdom!
                 </h2>
             </div>
-            <img src='pixel_art.png' width="500" height="500" className="w-[1500px] h-[500px] scale-x-[-1]"/>
+            <img src='example2.png' width="500" height="500" className="w-[1000px] h-[500px] px-[86px]"/>
         </div>
     );
 }

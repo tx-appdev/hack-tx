@@ -2,3 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --scroll:#ffffcc;
+    --title: #ff75bc;
+    --body:#FFFFFF;
+    --petal:pink;
+}
+
+.pin-spacer{
+    height:1320px !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+}
+
+.background {
+    background-color: black;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+@font-face {
+    font-family: 'Retro';
+    src: url('../fonts/MyGirlIsRetro-0Grz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    z-index:2;
+}
+
+@font-face {
+    font-family: 'Rocabe';
+    src: url('../fonts/RocabeTrialRegular-OGMep.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    z-index:2;
+}
+
+@font-face {
+    font-family: 'Karmatic';
+    src: url('../fonts/KarmaticArcade-6Yrp1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    z-index:2;
+}
+
+@font-face {
+    font-family: 'SuperLegend';
+    src: url('../fonts/SuperLegendBoy-4w8Y.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    z-index:2;
+}

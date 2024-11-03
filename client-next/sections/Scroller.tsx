@@ -34,16 +34,16 @@ const Scroller = () => {
     return (
         <div className="scroll-container w-[100%]">
             <div className="scroll-wrapper relative top-0 w-[400vw] h-[100vh] will-change-transform">
-                <div className="card absolute w-[600px] h-[600px] rounded-[20px] overflow-hidden top-[10%] left-[20%]" id="card1">
+                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[20%]" id="card1">
                     <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
                 </div>
-                <div className="card absolute w-[600px] h-[600px] rounded-[20px] overflow-hidden top-[10%] left-[40%]" id="card2">
+                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[40%]" id="card2">
                     <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
                 </div>
-                <div className="card absolute w-[600px] h-[600px] rounded-[20px] overflow-hidden top-[10%] left-[60%]" id="card3">
+                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[60%]" id="card3">
                     <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
                 </div>
-                <div className="card absolute w-[600px] h-[600px] rounded-[20px] overflow-hidden top-[10%] left-[80%]" id="card4">
+                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[80%]" id="card4">
                     <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
                 </div>
             </div>

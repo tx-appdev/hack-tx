@@ -58,7 +58,7 @@ for index, color in enumerate(colors):
     if(low < acc):
         acc_color = color
         acci = index
-    if(high > bg):
+    if(high < bg):
         bg_color = color
         bgi = index
 

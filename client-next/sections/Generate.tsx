@@ -1,5 +1,9 @@
 'use client';
 import CherryBlossomPetals from "@/components/CherryBlossom";
+import Platformer from "@/components/Platformer";
+import characterImg from "../public/character.jpg";
+import backgroundImg from "../public/background.webp"; 
+import groundImg from "../public/ground_asset.jpg"; 
 import React, { useState } from 'react';
 
 const Generate: React.FC = () => {
@@ -137,7 +141,8 @@ const Generate: React.FC = () => {
                         className="w-[70px] p-2 border font-[SuperLegend] text-[black]"
                     />
                 </div>
-            </div>
+            </div>-
+
             <div className="flex items-center justify-center p-[20px]">
                 <button 
                     onClick={handleButtonClick} 
@@ -182,6 +187,22 @@ const Generate: React.FC = () => {
                             </button>
                         </div>
                     </div>
+                    <div className="demo-section py-12 w-full text-white pt-80">
+                {/* Demo Heading */}
+                <div className="text-center mb-8">
+                    <h2 className="font-[Karmatic] text-[4em] text-[--title] pb-4">
+                        Game Environment Demo
+                    </h2>
+                    <p className="font-[SuperLegend] text-[1.5em] text-[--body] pb-10">
+                        Preview your assets in action!
+                    </p>
+                </div>
+                <Platformer 
+                    characterImg={characterImg} 
+                    backgroundImg={backgroundImg} 
+                    groundImg={groundImg} 
+                />
+                </div>
                 </div>
             )}
             <CherryBlossomPetals />

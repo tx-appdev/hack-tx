@@ -15,7 +15,7 @@ export default function Home() {
           <TextScroller />
           <Hero />
           <Body />
-          <Demonstration/>
+          <Demonstration />
           <CherryBlossomPetals />
         </div>
       </div>

@@ -39,11 +39,9 @@ const About = () => {
                     How We Built It
                 </h2>
                 <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
-                    We opted to build our web application using React and Next.js for fast loading speeds and static site generation.
+                    We opted to build our web application using React and Next.js for fast loading speeds and static site generation. We developed three pages including a user friendly landing page, about section, and generative interface for asset creation, and used Flask to connect our application to our Python backend. We used Python to implement stable diffusion with AI, and received generation directions from a text input provided by the user.
                     <br /><br />
-                    We developed three pages including a user friendly landing page, about section, and generative interface for asset creation, and used Flask to connect our application to our Python backend.
-                    <br /><br />
-                    We used Python to implement stable diffusion and theme color generators with AI, and received generation directions from a text input provided by the user.
+                    Whenever a user enters a prompt, the input is sent to a generative AI model and intelligently parsed into keywords. Once the keywords are acquired, they are then sent to stable diffusion which returns a set of generated images based on those keywords. The images are then used to create a live demo environment where the user can interact with the sprites as well as an image gallery for downloading assets.
                 </p>
                 <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
                     Challenges We Faced

@@ -5,6 +5,7 @@ import characterImg from "../public/generated_image_0.png";
 import backgroundImg from "../public/generated_image_2.png"; 
 import groundImg from "../public/generated_image_1.png"; 
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Generate: React.FC = () => {
     const [numberOfAssets, setNumberOfAssets] = useState("5");
@@ -113,12 +114,45 @@ const Generate: React.FC = () => {
 
     return (
         <>
+        
             <div className="background"></div>
-            <div className="generation pt-[8%] my-0 mx-auto flex items-center justify-center text-center">
+            <div className="overflow-hidden">
+            <motion.div
+            className="card overflow-hidden"
+            initial={{
+                opacity: 0,
+                y: -50 
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0, 
+                transition: {
+                duration: 1 // Animation duration
+                }
+            }}
+            viewport={{ once: true }}
+            > 
+            <div className="generation pt-[8%] my-0 mx-auto flex items-center justify-center text-center overflow-hidden">
                 <div className="heading-wrapper">
                     <h1 className="font-[Karmatic] text-[6em] text-[--title]">GENERATE</h1>
                 </div>
             </div>
+            </motion.div>
+            <motion.div
+            className="card overflow-hidden"
+            initial={{
+                opacity: 0,
+                y: 50 
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0, 
+                transition: {
+                duration: 1 // Animation duration
+                }
+            }}
+            viewport={{ once: true }}
+            > 
             <div className="subheading-wrapper flex items-center justify-center text-center">
                 <h3 className="font-[Karmatic] text-[2em] text-[--body] pt-4 pb-8">
                     Kickstart your indie dev journey!
@@ -160,7 +194,7 @@ const Generate: React.FC = () => {
         </button>
     )}
 </div>
-
+</motion.div>
             {galleryVisible && (
                 <div className="flex flex-col items-center justify-center min-h-screen pt-24">
                     <h1 className="text-4xl font-[Karmatic] text-white mb-6 overflow:hidden">Image Gallery</h1>
@@ -216,6 +250,7 @@ const Generate: React.FC = () => {
                 </div>
             )}
             <CherryBlossomPetals />
+            </div>
         </>
     );
 };

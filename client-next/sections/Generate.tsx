@@ -51,6 +51,23 @@ const Generate: React.FC = () => {
         setGameIdea(event.target.value); 
     };
 
+    const handleDownload = async () => {
+        try {
+            const response = await fetch('http://127.0.0.1:5000/download-images');
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'images.zip';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Download failed", error);
+        }
+    };
+
     const handleButtonClick = async () => {
         // Check if numberOfAssets is less than 5
         if (parseInt(numberOfAssets) < 5) {
@@ -68,6 +85,9 @@ const Generate: React.FC = () => {
             numberOfAssets, 
             gameIdea,      
         };
+
+        // Inner function for handling the download of images
+
 
         try {
             const response = await fetch('http://127.0.0.1:5000/api/data', {
@@ -134,32 +154,36 @@ const Generate: React.FC = () => {
             {galleryVisible && (
                 <div className="flex flex-col items-center justify-center min-h-screen">
                     <h1 className="text-4xl font-[Karmatic] text-white mb-6 overflow:hidden">Image Gallery</h1>
-                    <div className="bg-white p-4 rounded-lg shadow-lg">
-                        <div className="image-container mb-4">
+                    <div className="image-container mb-4 bg-white p-5 rounded-lg shadow-lg">
                             {isImageValid(currentIndex) ? (
                                 <img
                                     src={imageUrls[currentIndex]}
                                     alt={`Generated Image ${currentIndex}`}
-                                    className="max-w-xs h-auto rounded-lg shadow-md"
+                                    className="max-w-xs flex h-auto rounded-lg shadow-md items-center justify-center"
                                 />
                             ) : (
                                 <div className="text-center font-[Karmatic] text-red-500">Image not found.</div>
                             )}
                         </div>
+                    <div className="">
+
                         <div className="flex space-x-4 justify-center ">
                             <button
                                 onClick={previousImage}
-                                className={`px-4 py-2 text-lg font-semibold text-white bg-pink-700 rounded-lg shadow-lg transition duration-300 ${currentIndex === 0 || !isImageValid(currentIndex) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pink-800'}`}
+                                className={`px-4 py-2 text-lg font-semibold text-white bg-pink-500 rounded-lg shadow-lg transition duration-300 ${currentIndex === 0 || !isImageValid(currentIndex) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pink-600'}`}
                                 disabled={currentIndex === 0 || !isImageValid(currentIndex)}
                             >
                                 Previous
                             </button>
                             <button
                                 onClick={nextImage}
-                                className={`px-4 py-2 text-lg font-semibold text-white bg-pink-700 rounded-lg shadow-lg transition duration-300 ${currentIndex === maxImages - 1 || !isImageValid(currentIndex) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pink-800'}`}
+                                className={`px-4 py-2 text-lg font-semibold text-white bg-pink-500 rounded-lg shadow-lg transition duration-300 ${currentIndex === maxImages - 1 || !isImageValid(currentIndex) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pink-600'}`}
                                 disabled={currentIndex === maxImages - 1 || !isImageValid(currentIndex)}
                             >
                                 Next
+                            </button>
+                            <button onClick={handleDownload} className="`px-4 p-4 py-2 text-lg font-semibold text-white bg-pink-500 rounded-lg shadow-lg transition duration-300 ${currentIndex === maxImages - 1 || !isImageValid(currentIndex) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pink-600'}`">
+                                Download Images
                             </button>
                         </div>
                     </div>

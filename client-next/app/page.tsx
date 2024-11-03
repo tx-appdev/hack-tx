@@ -1,3 +1,4 @@
+import CherryBlossomPetals from "@/components/CherryBlossom";
 import Navbar from "../components/ui/Navbar";
 import Hero from "../sections/Hero";
 import Body from "@/sections/Body";
@@ -12,6 +13,7 @@ export default function Home() {
           <TextScroller />
           <Hero />
           <Body />
+          <CherryBlossomPetals />
         </div>
       </div>
     </>

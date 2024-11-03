@@ -16,7 +16,18 @@ const Generate = () => {
                     Kickstart your indie dev journey
                 </h3>
             </div>
-            <div className="fixed bottom-0 left-0 w-full py-[5%] flex items-center justify-center">
+            <div className="flex items-center justify-center text-center text-[--body]">
+                <div className="img-1 px-20">
+                    placeholder here
+                </div>
+                <div className="img-2 px-20">
+                    placeholder here
+                </div>
+                <div className="img-3 px-20">
+                    placeholder here
+                </div>
+            </div>
+            <div className="text-input fixed bottom-0 left-0 w-full py-[5%] flex items-center justify-center">
                 <input
                     type="text"
                     placeholder="Type something..."

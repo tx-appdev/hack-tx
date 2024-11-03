@@ -1,6 +1,6 @@
 const Body = () => {
     return (
-        <div className="body h-[100vh]">
+        <div className="body h-[20vh]">
             Body
         </div>
     );

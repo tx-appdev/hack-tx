@@ -10,7 +10,7 @@
 }
 
 .pin-spacer{
-    height:1250px !important;
+    height:1320px !important;
 }
 
 * {
@@ -23,6 +23,7 @@
 html, body {
     width: 100%;
     background-color: #000000;
+    z-index:0;
 }
 
 @font-face {
@@ -30,6 +31,7 @@ html, body {
     src: url('../fonts/MyGirlIsRetro-0Grz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    z-index:2;
 }
 
 @font-face {
@@ -37,6 +39,7 @@ html, body {
     src: url('../fonts/RocabeTrialRegular-OGMep.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    z-index:2;
 }
 
 @font-face {
@@ -44,6 +47,7 @@ html, body {
     src: url('../fonts/KarmaticArcade-6Yrp1.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    z-index:2;
 }
 
 @font-face {
@@ -51,4 +55,5 @@ html, body {
     src: url('../fonts/SuperLegendBoy-4w8Y.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    z-index:2;
 }

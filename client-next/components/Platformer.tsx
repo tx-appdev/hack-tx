@@ -10,6 +10,7 @@ interface PlatformerProps {
   groundImg: StaticImageData; // Image for ground
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Platformer({ characterImg, backgroundImg, groundImg }: PlatformerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [position, setPosition] = useState({ x: 200, y: 400 });
@@ -100,7 +101,7 @@ export default function Platformer({ characterImg, backgroundImg, groundImg }: P
         />
       </div>
 
-      <div className="absolute bottom-10 w-full h-20 bg-repeat-x bg-transparent" ref={groundRef}></div>
+      <div className="absolute bottom-0 w-full h-10 bg-repeat-x bg-black" ref={groundRef}></div>
 
       {isPlaying ? (
         <div

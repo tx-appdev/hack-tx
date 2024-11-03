@@ -1,9 +1,9 @@
 'use client';
 import CherryBlossomPetals from "@/components/CherryBlossom";
 import Platformer from "@/components/Platformer";
-import characterImg from "../public/character.jpg";
-import backgroundImg from "../public/background.webp"; 
-import groundImg from "../public/ground_asset.jpg"; 
+import characterImg from "../public/generated_image_0.png";
+import backgroundImg from "../public/generated_image_2.png"; 
+import groundImg from "../public/generated_image_1.png"; 
 import React, { useState } from 'react';
 
 const Generate: React.FC = () => {
@@ -11,6 +11,7 @@ const Generate: React.FC = () => {
     const [gameIdea, setGameIdea] = useState(""); 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [galleryVisible, setGalleryVisible] = useState(false); 
+    const [loading, setLoading] = useState(false);
     const maxImages = parseInt(numberOfAssets); // Update maxImages based on user input
 
     // Create an array of image URLs based on the naming convention
@@ -87,7 +88,7 @@ const Generate: React.FC = () => {
         };
 
         // Inner function for handling the download of images
-
+        setLoading(true);
 
         try {
             const response = await fetch('http://127.0.0.1:5000/api/data', {
@@ -103,6 +104,10 @@ const Generate: React.FC = () => {
             showGallery(); 
         } catch (error) {
             console.error('Error sending data:', error);
+        }
+        finally {
+        // Reset loading state after fetch
+            setLoading(false);
         }
     };
 
@@ -144,15 +149,20 @@ const Generate: React.FC = () => {
             </div>-
 
             <div className="flex items-center justify-center p-[20px]">
-                <button 
-                    onClick={handleButtonClick} 
-                    className="flex items-center font-[SuperLegend] justify-center text-center text-[--body] p-4 bg-pink-500 text-white rounded hover:bg-pink-600"
-                >
-                    Generate Now
-                </button>
-            </div>
+    {loading ? (
+        <img src="/preloader.gif" alt="Loading..." className="h-16 w-16" />
+    ) : (
+        <button 
+            onClick={handleButtonClick} 
+            className="flex items-center font-[SuperLegend] justify-center text-center text-[--body] p-4 bg-pink-500 text-white rounded hover:bg-pink-600"
+        >
+            Generate Now
+        </button>
+    )}
+</div>
+
             {galleryVisible && (
-                <div className="flex flex-col items-center justify-center min-h-screen">
+                <div className="flex flex-col items-center justify-center min-h-screen pt-24">
                     <h1 className="text-4xl font-[Karmatic] text-white mb-6 overflow:hidden">Image Gallery</h1>
                     <div className="image-container mb-4 bg-white p-5 rounded-lg shadow-lg">
                             {isImageValid(currentIndex) ? (
@@ -187,7 +197,7 @@ const Generate: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="demo-section py-12 w-full text-white pt-80">
+                    <div className="demo-section py-12 w-full text-white pt-40">
                 {/* Demo Heading */}
                 <div className="text-center mb-8">
                     <h2 className="font-[Karmatic] text-[4em] text-[--title] pb-4">

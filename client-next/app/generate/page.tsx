@@ -1,11 +1,11 @@
 import Navbar from "@/components/ui/Navbar";
-import Generation from "@/sections/Generation";
+import Generate from "@/sections/Generate";
 
 const GeneratePage = () => {
     return (
         <>
             <Navbar />
-            <Generation />
+            <Generate />
         </>
     );
 }

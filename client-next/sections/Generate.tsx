@@ -1,4 +1,4 @@
-const Generation = () => {
+const Generate = () => {
     return (
         <div className="generation h-[100vh]">
             Generation
@@ -6,4 +6,4 @@ const Generation = () => {
     );
 }
  
-export default Generation;
+export default Generate;

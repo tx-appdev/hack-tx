@@ -34,3 +34,10 @@ html, body {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'SuperLegend';
+    src: url('../fonts/SuperLegendBoy-4w8Y.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -63,3 +63,7 @@ html, body {
     font-style: normal;
     z-index:2;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

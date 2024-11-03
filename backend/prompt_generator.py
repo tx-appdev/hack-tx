@@ -31,9 +31,13 @@ def extract_keywords(theme, number):
 
 # Test the function
 
+def getAssets():
+    return assetList
+
 keyWord = input("a theme: ") # Replace with bar thingy
 numAssets = int(input("a num: ")) # Replace with bar thingy
 assets = extract_keywords(keyWord, numAssets).strip()
 assetList = assets.split("\n")
+
 
 print(assetList)

@@ -1,10 +1,23 @@
 'use client';
 import CherryBlossomPetals from "@/components/CherryBlossom";
+import React, { useState } from 'react';
 
-const Generate = () => {
+const Generate: React.FC = () => {
+    const [numberOfAssets, setNumberOfAssets] = useState("5");
+    const [gameIdea, setGameIdea] = useState(""); // State for the game idea input
+
+    const handleAssetsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setNumberOfAssets(event.target.value); // Update the state with the input value
+    };
+
+    const handleGameIdeaChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setGameIdea(event.target.value); // Update the game idea state
+    };
+
     const handleButtonClick = async () => {
         const dataToSend = {
-            key: "value" // Replace with your actual data
+            numberOfAssets, // Use the stored value for number of assets
+            gameIdea,      // Use the stored value for game idea
         };
 
         try {
@@ -22,6 +35,7 @@ const Generate = () => {
             console.error('Error sending data:', error);
         }
     };
+
     return (
         <>
             <div className="background"></div>
@@ -42,6 +56,8 @@ const Generate = () => {
                     type="text"
                     maxLength={100}
                     placeholder="Enter your game idea..."
+                    value={gameIdea} // Bind to game idea state
+                    onChange={handleGameIdeaChange} // Handle changes
                     className="w-[90%] max-w-[600px] p-2 border font-[SuperLegend]"
                 />
             </div>
@@ -50,7 +66,8 @@ const Generate = () => {
                 <div className="pl-4">
                     <input
                         type="text"
-                        defaultValue="5"
+                        value={numberOfAssets} // Set the input value to the state variable
+                        onChange={handleAssetsChange} // Update the state on change
                         step="1"
                         min="1"
                         max="20"
@@ -58,18 +75,18 @@ const Generate = () => {
                         className="w-[70px] p-2 border font-[SuperLegend] text-[black]"
                     />
                 </div>
-                
             </div>
             <div className="flex items-center justify-center p-[20px]"> {/* Full height for centering */}
-            <button 
-                onClick={handleButtonClick} 
-                className="flex items-center font-[SuperLegend] justify-center text-center text-[--body] p-4 bg-pink-500 text-white rounded hover:bg-pink-600">
-                Generate Now
-            </button>
-        </div>
-        <CherryBlossomPetals />
+                <button 
+                    onClick={handleButtonClick} 
+                    className="flex items-center font-[SuperLegend] justify-center text-center text-[--body] p-4 bg-pink-500 text-white rounded hover:bg-pink-600"
+                >
+                    Generate Now
+                </button>
+            </div>
+            <CherryBlossomPetals />
         </>
     );
 }
- 
+
 export default Generate;

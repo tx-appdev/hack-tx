@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="navbar-wrapper fixed top-0 left-0 w-[100%] py-5 px-[10%] flex justify-between align-center z-50 font-[Rocabe] text-slate-700">
+        <div className="navbar-wrapper font-[Rocabe] text-[--body] fixed top-0 left-0 w-[100%] py-5 px-[10%] flex justify-between align-center z-50">
             <a href="/">INDIE STUDIO</a>
 
             <nav className="navbar">

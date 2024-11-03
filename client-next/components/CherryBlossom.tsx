@@ -1,9 +1,7 @@
-// CherryBlossomPetals.js
-import React from 'react';
-import './CherryBlossom.css'; // Import the CSS file for styles
+import './CherryBlossom.css';
 
 const CherryBlossomPetals = () => {
-  const petals = Array.from({ length: 36 }); // Create an array of petals
+  const petals = Array.from({ length: 36 });
 
   return (
     <div className="petals-container">

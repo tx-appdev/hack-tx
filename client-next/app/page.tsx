@@ -3,7 +3,10 @@ import Hero from "../sections/Hero";
 import Body from "@/sections/Body";
 import TextScroller from "@/sections/TextScroller";
 import CherryBlossomPetals from "@/components/CherryBlossom";
-import Demonstration from "@/sections/Demonstration";
+import DemonstrationTop from "@/sections/DemonstrationTop";
+import DemonstrationMiddle from "@/sections/DemonstrationMiddle";
+import DemonstrationBottom from "@/sections/DemonstrationBottom";
+import GenerateNow from "@/components/ui/GenerateNow";
 
 export default function Home() {
   return (
@@ -15,7 +18,10 @@ export default function Home() {
           <TextScroller />
           <Hero />
           <Body />
-          <Demonstration />
+          <DemonstrationTop />
+          <DemonstrationMiddle />
+          <DemonstrationBottom />
+          <GenerateNow />
           <CherryBlossomPetals />
         </div>
       </div>

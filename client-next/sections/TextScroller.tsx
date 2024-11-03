@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Scroller = () => {
+const TextScroller = () => {
     useGSAP(() => {
         const cards = [
             { id: "#card-1", endTranslateX: -2000 },
@@ -51,4 +51,4 @@ const Scroller = () => {
     );
 }
  
-export default Scroller;
+export default TextScroller;

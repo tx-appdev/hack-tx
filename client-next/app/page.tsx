@@ -1,8 +1,7 @@
 import Scroller from "@/sections/Scroller";
 import Navbar from "../components/ui/Navbar";
 import Hero from "../sections/Hero";
-import About from "@/sections/About";
-import Generation from "@/sections/Generation";
+import Body from "@/sections/Body";
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <Scroller />
-          <About />
-          <Generation />
+          <Body />
         </div>
       </div>
     </>

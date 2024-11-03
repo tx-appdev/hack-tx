@@ -16,23 +16,27 @@ const Generate = () => {
                     Kickstart your indie dev journey
                 </h3>
             </div>
-            <div className="flex items-center justify-center text-center text-[--body]">
-                <div className="img-1 px-20">
-                    placeholder here
-                </div>
-                <div className="img-2 px-20">
-                    placeholder here
-                </div>
-                <div className="img-3 px-20">
-                    placeholder here
-                </div>
-            </div>
-            <div className="text-input fixed bottom-0 left-0 w-full py-[5%] flex items-center justify-center">
+            <div className="text-input w-full pb-5 flex items-center justify-center">
                 <input
                     type="text"
-                    placeholder="Type something..."
+                    maxLength={100}
+                    placeholder="Enter your game idea..."
                     className="w-[90%] max-w-[600px] p-2 border font-[SuperLegend]"
                 />
+            </div>
+            <div className="flex items-center justify-center text-center text-[--body]">
+                <div className="font-[SuperLegend]">Number of Assets: </div>
+                <div className="pl-4">
+                    <input
+                        type="text"
+                        defaultValue="5"
+                        step="1"
+                        min="1"
+                        max="20"
+                        maxLength={2}
+                        className="w-[70px] p-2 border font-[SuperLegend] text-[black]"
+                    />
+                </div>
             </div>
             <CherryBlossomPetals />
         </>

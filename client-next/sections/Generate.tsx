@@ -13,7 +13,7 @@ const Generate = () => {
             </div>
             <div className="subheading-wrapper flex items-center justify-center text-center">
                 <h3 className="font-[Karmatic] text-[2em] text-[--body] pt-4 pb-8">
-                    Kickstart your indie dev journey
+                    Kickstart your indie dev journey!
                 </h3>
             </div>
             <div className="text-input w-full pb-5 flex items-center justify-center">

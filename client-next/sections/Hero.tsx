@@ -1,4 +1,3 @@
-import CherryBlossomPetals from "@/components/CherryBlossom";
 const Hero = () => {
     return (
         <div className="hero min-h-[100vh] max-w-[1200px] my-0 mx-auto flex items-center justify-center">

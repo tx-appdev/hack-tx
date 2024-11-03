@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <>
-            <div className="about pt-[10%] my-0 mx-auto flex items-center justify-center text-center">
+            <div className="about pt-[8%] my-0 mx-auto flex items-center justify-center text-center">
                 <div className="heading-wrapper">
                     <h1 className="font-[Karmatic] text-[6em] text-[--title]">
                         ABOUT
@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="subheading-wrapper flex items-center justify-center text-center">
                 <h3 className="font-[Karmatic] text-[2em] text-[--body] pt-4 pb-8">
-                    Description goes here
+                    A Generative AI Assistant
                 </h3>
             </div>
             <div className="body-wrapper text-left py-8 px-[10%] max-w-[100%]">
@@ -44,6 +44,7 @@ const About = () => {
                 <p className="font-[SuperLegend] text-[1.5em] py-4 text-[--body]">
                     Paragraph 5
                 </p>
+                <div className="py-10"></div>
             </div>
         </>
     );

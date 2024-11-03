@@ -7,7 +7,6 @@ import Demonstration from "@/sections/demonstration";
 export default function Home() {
   return (
     <>
-    
       <div className="site-wrapper">
         <div className="site-content">
           <div className="background"></div>

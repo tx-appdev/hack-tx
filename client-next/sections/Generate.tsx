@@ -1,6 +1,27 @@
+'use client';
 import CherryBlossomPetals from "@/components/CherryBlossom";
 
 const Generate = () => {
+    const handleButtonClick = async () => {
+        const dataToSend = {
+            key: "value" // Replace with your actual data
+        };
+
+        try {
+            const response = await fetch('http://127.0.0.1:5000/api/data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(dataToSend),
+            });
+
+            const responseData = await response.json();
+            console.log(responseData);
+        } catch (error) {
+            console.error('Error sending data:', error);
+        }
+    };
     return (
         <>
             <div className="background"></div>
@@ -37,8 +58,16 @@ const Generate = () => {
                         className="w-[70px] p-2 border font-[SuperLegend] text-[black]"
                     />
                 </div>
+                
             </div>
-            <CherryBlossomPetals />
+            <div className="flex items-center justify-center h-screen"> {/* Full height for centering */}
+            <button 
+                onClick={handleButtonClick} 
+                className="flex items-center justify-center text-center text-[--body] p-4 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Send Data to Flask
+            </button>
+        </div>
+        <CherryBlossomPetals />
         </>
     );
 }

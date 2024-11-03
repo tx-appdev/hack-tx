@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --scroll:#ffffcc;
+    --title: #ff75bc;
+    --body:#FFFFFF;
+    --petal:pink;
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +37,13 @@ html, body {
 @font-face {
     font-family: 'Karmatic';
     src: url('../fonts/KarmaticArcade-6Yrp1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuperLegend';
+    src: url('../fonts/SuperLegendBoy-4w8Y.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

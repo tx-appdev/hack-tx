@@ -27,7 +27,7 @@ const TextScroller = () => {
     return (
         <div className="scroll-container w-[100%] overflow-hidden">
             <div className="scroll-wrapper relative top-0 w-[400vw] h-[100vh] will-change-transform overflow-hidden">
-                <h1 className="absolute top-[-10%] font-[Karmatic] text-[#3bff4e] w-[100%] pl-8 text-[36vw] align-center m-0">HACK TX 2024</h1>
+                <h1 className="absolute top-[-10%] font-[Karmatic] text-[--scroll] w-[100%] pl-8 text-[36vw] align-center m-0">HACK TX 2024</h1>
             </div>
         </div>
     );

@@ -1,6 +1,9 @@
+import CherryBlossomPetals from "@/components/CherryBlossom";
+
 const Generate = () => {
     return (
         <>
+            <div className="background"></div>
             <div className="generation pt-[8%] my-0 mx-auto flex items-center justify-center text-center">
                 <div className="heading-wrapper">
                     <h1 className="font-[Karmatic] text-[6em] text-[--title]">
@@ -20,6 +23,7 @@ const Generate = () => {
                     className="w-[90%] max-w-[600px] p-2 border font-[SuperLegend]"
                 />
             </div>
+            <CherryBlossomPetals />
         </>
     );
 }

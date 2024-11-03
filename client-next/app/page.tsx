@@ -10,7 +10,7 @@ export default function Home() {
     
       <div className="site-wrapper">
         <div className="site-content">
-          
+          <div className="background"></div>
           <Navbar />
           <TextScroller />
           <Hero />

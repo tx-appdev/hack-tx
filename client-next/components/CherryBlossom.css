@@ -8,7 +8,6 @@
   border-radius: 0%; /* Top rounded and bottom flat */
   transform: rotate(-20deg); /* Slight tilt to simulate natural petals */
   opacity: 1;
-  z-index:1;
   animation: fall linear infinite; /* Animation to make petals fall */
   }
   
@@ -38,6 +37,7 @@
     overflow: hidden;       /* Prevents petals from overflowing */
               /* Sends it to the background */
     pointer-events: none;   /* Prevents it from interfering with clicks */
+    z-index: -10;
   }
   
   

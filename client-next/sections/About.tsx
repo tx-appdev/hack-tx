@@ -266,6 +266,8 @@ const About = () => {
                     One challenge we faced was implementing stable diffusion into our project. The main problem we faced was the stable diffusion program taking a long time to generate, but we made our best attempt to increase load speeds.
                     <br /><br />
                     Another challenge we faced was designing a clean user experience that fit well with the hackathon theme. We went through several theme ideas before deciding on the current version and encountered problems with implementing several design ideas, but in the end we finally came up with a version that we were satisfied with.
+                    <br /><br />
+                    Of course, our hardest challenge was sleep deprivation and merge conflicts :&rpar;
                 </p>
                 </motion.div>
                 <div className="py-10"></div>

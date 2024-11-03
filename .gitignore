@@ -38,3 +38,5 @@
 # typescript
 **/*.tsbuildinfo
 **/next-env.d.ts
+
+**/client-next/public/generated_image_*.png

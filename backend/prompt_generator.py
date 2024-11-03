@@ -3,7 +3,6 @@ import os
 
 # Retrieve the key from environment variables
 openai.api_key = os.getenv("OPENAI_API_KEY")
-
 def extract_keywords(theme, number):
     messages = [
     {"role": "system", "content": "You are a helpful assistant for generating theme-based keywords and assets for a retro video game."},

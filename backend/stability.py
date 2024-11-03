@@ -18,7 +18,7 @@ headers = {
 for i, asset in enumerate(assets):
     # Prepare data payload for each asset
     data = {
-        "text_prompts": [{"text": f"A pixel art sprite of a {asset}, 8-bit style, low resolution, 32x32 pixels, retro video game character with head, body, legs. Remove the ground so it's just the character."}],
+        "text_prompts": [{"text": f"A pixel art sprite of a {asset}, 8-bit style, low resolution, 32x32 pixels, retro video game character with head, body, legs. Remove the ground so it's just the character. Only create one character and make sure that it fills up the majority of the screen. Keep the background white."}],
         "cfg_scale": 7,
         "steps": 50,
         "width": 512,

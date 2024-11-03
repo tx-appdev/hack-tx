@@ -71,13 +71,13 @@ const Generate = () => {
                     Generate Now
                 </button>
             </div>
-            <div className="demo-section py-12 w-full bg-black text-white">
+            <div className="demo-section py-12 w-full text-white pt-80">
                 {/* Demo Heading */}
                 <div className="text-center mb-8">
-                    <h2 className="font-[Karmatic] text-[4em] text-[--title]">
+                    <h2 className="font-[Karmatic] text-[4em] text-[--title] pb-4">
                         Game Environment Demo
                     </h2>
-                    <p className="font-[SuperLegend] text-[1.5em] text-[--body]">
+                    <p className="font-[SuperLegend] text-[1.5em] text-[--body] pb-10">
                         Preview your assets in action!
                     </p>
                 </div>

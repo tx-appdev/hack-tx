@@ -1,5 +1,9 @@
 'use client';
 import CherryBlossomPetals from "@/components/CherryBlossom";
+import Platformer from "@/components/Platformer";
+import characterImg from "../public/character.jpg";
+import backgroundImg from "../public/background.webp"; 
+import groundImg from "../public/ground_asset.jpg"; 
 
 const Generate = () => {
     const handleButtonClick = async () => {
@@ -61,12 +65,29 @@ const Generate = () => {
                 
             </div>
             <div className="flex items-center justify-center h-screen"> {/* Full height for centering */}
-            <button 
-                onClick={handleButtonClick} 
-                className="flex items-center justify-center text-center text-[--body] p-4 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Send Data to Flask
-            </button>
-        </div>
+                <button 
+                    onClick={handleButtonClick} 
+                    className="flex items-center justify-center text-center text-[--body] p-4 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Send Data to Flask
+                </button>
+            </div>
+            <div className="demo-section py-12 w-full bg-black text-white">
+                {/* Demo Heading */}
+                <div className="text-center mb-8">
+                    <h2 className="font-[Karmatic] text-[4em] text-[--title]">
+                        Game Environment Demo
+                    </h2>
+                    <p className="font-[SuperLegend] text-[1.5em] text-[--body]">
+                        Preview your assets in action!
+                    </p>
+                </div>
+                <Platformer 
+                    characterImg={characterImg} 
+                    backgroundImg={backgroundImg} 
+                    groundImg={groundImg} 
+                />
+            </div>
+
         <CherryBlossomPetals />
         </>
     );

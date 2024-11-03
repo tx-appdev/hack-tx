@@ -6,7 +6,7 @@ const Hero = () => {
                     INDIE STUDIO
                 </h1>
                 <h2 className="font-[Retro] text-[2.5em] text-[--body] text-center m-0">
-                    A generative AI solution to indie<br />
+                    A generative AI solution for indie<br />
                     game development.
                 </h2>
             </div>

@@ -9,8 +9,8 @@ const DemonstrationTop = () => {
 
                 <h2 className="font-[SuperLegend] text-[1.5em] text-[--body] text-center pr-[150px]">
                     Reimagine the lost art of retro gaming through our <br />
-                    easy to use AI tool. Simply navigate to the <b>generate</b> <br />
-                    tab and enter in a prompt and wait for your image to be created.
+                    easy to use AI tool. Simply navigate to the generate<br />
+                    tab and enter in a prompt and wait for your images to be created.
                 </h2>
             </div>
         </div>

@@ -3,7 +3,8 @@ import Hero from "../sections/Hero";
 import Body from "@/sections/Body";
 import TextScroller from "@/sections/TextScroller";
 import CherryBlossomPetals from "@/components/CherryBlossom";
-import Demonstration from "@/sections/demonstration";
+import Demonstration from "@/sections/Demonstration";
+
 export default function Home() {
   return (
     <>

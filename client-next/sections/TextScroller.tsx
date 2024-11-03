@@ -8,13 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TextScroller = () => {
     useGSAP(() => {
-        const cards = [
-            { id: "#card-1", endTranslateX: -2000 },
-            { id: "#card-2", endTranslateX: -2000 },
-            { id: "#card-3", endTranslateX: -2000 },
-            { id: "#card-4", endTranslateX: -2000 },
-        ];
-
         ScrollTrigger.create({
             trigger: ".scroll-wrapper",
             start: "top top",
@@ -34,18 +27,7 @@ const TextScroller = () => {
     return (
         <div className="scroll-container w-[100%]">
             <div className="scroll-wrapper relative top-0 w-[400vw] h-[100vh] will-change-transform">
-                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[20%]" id="card1">
-                    <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
-                </div>
-                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[40%]" id="card2">
-                    <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
-                </div>
-                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[60%]" id="card3">
-                    <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
-                </div>
-                <div className="card absolute w-[450px] h-[450px] rounded-3xl overflow-hidden top-[20%] left-[80%]" id="card4">
-                    <img src="img-1.jpg" alt="" className="w-[100%] h-[100%] object-cover" />
-                </div>
+                <h1 className="absolute top-[10%] font-[Karmatic] w-[100%] pl-8 text-[36vw] align-center m-0">HACK TX 2024</h1>
             </div>
         </div>
     );

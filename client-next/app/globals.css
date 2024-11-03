@@ -16,14 +16,21 @@ html, body {
 
 @font-face {
     font-family: 'Retro';
-    src: url('../fonts/MyGirlIsRetro-0Grz.ttf') format('truetype'); /* Make sure the path is correct */
-    font-weight: normal; /* Optional: Specify weight if applicable */
-    font-style: normal; /* Optional: Specify style if applicable */
+    src: url('../fonts/MyGirlIsRetro-0Grz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Rocabe';
-    src: url('../fonts/RocabeTrialRegular-OGMep.ttf') format('truetype'); /* Make sure the path is correct */
-    font-weight: normal; /* Optional: Specify weight if applicable */
-    font-style: normal; /* Optional: Specify style if applicable */
+    src: url('../fonts/RocabeTrialRegular-OGMep.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karmatic';
+    src: url('../fonts/KarmaticArcade-6Yrp1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

@@ -30,6 +30,7 @@ def receive_data():
     json_data = {
         'images': images_data
     }
+    print(jsonify(json_data))
     return jsonify(json_data)
 
 

@@ -1,6 +1,6 @@
+'use client';
 import Navbar from "@/components/ui/Navbar";
 import Generate from "@/sections/Generate";
-
 const GeneratePage = () => {
     return (
         <>

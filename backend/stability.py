@@ -28,7 +28,7 @@ def createImage(assets):
                 if 'base64' in response_data['artifacts'][0]:
                     image_base64 = response_data['artifacts'][0]['base64']
                     image_data = base64.b64decode(image_base64)
-                    filename = f"generated_image_{i}.png"
+                    filename = f"client-next/public/generated_image_{i}.png"
                     with open(filename, "wb") as f:
                         f.write(image_data)
                     print(f"Saved image: {filename}")

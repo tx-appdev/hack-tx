@@ -64,11 +64,11 @@ const Generate = () => {
                 </div>
                 
             </div>
-            <div className="flex items-center justify-center h-screen"> {/* Full height for centering */}
+            <div className="flex items-center justify-center p-[20px]"> {/* Full height for centering */}
                 <button 
                     onClick={handleButtonClick} 
-                    className="flex items-center justify-center text-center text-[--body] p-4 bg-blue-500 text-white rounded hover:bg-blue-600">
-                    Send Data to Flask
+                    className="flex items-center font-[SuperLegend] justify-center text-center text-[--body] p-4 bg-pink-500 text-white rounded hover:bg-pink-600">
+                    Generate Now
                 </button>
             </div>
             <div className="demo-section py-12 w-full bg-black text-white">

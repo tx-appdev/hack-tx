@@ -2,10 +2,10 @@
 .petal {
     position: absolute;
     top: -50px; /* Start above the viewport */
-    width: 10px; /* Width of the petal */
+    width: 20px; /* Width of the petal */
     height: 10px; /* Height of the petal */
     background-color: pink; /* Petal color */
-    border-radius: 0%; /* Make it circular */
+    border-radius: 50%; /* Make it circular */
     opacity: 1;
     animation: fall linear infinite; /* Animation to make petals fall */
   }
@@ -24,13 +24,13 @@
   
   /* Styles for the container */
   .petals-container {
-    position: absolute;        /* Keeps the container in place while scrolling */
+    position: fixed;        /* Keeps the container in place while scrolling */
     top: 0;
     left: 0;
     width: 100vw;           /* Full viewport width */
     height: 100vh;          /* Full viewport height */
     overflow: hidden;       /* Prevents petals from overflowing */
-    z-index: -1;            /* Sends it to the background */
+              /* Sends it to the background */
     pointer-events: none;   /* Prevents it from interfering with clicks */
   }
   

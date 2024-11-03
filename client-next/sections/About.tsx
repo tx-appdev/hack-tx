@@ -267,7 +267,7 @@ const About = () => {
                     <br /><br />
                     Another challenge we faced was designing a clean user experience that fit well with the hackathon theme. We went through several theme ideas before deciding on the current version and encountered problems with implementing several design ideas, but in the end we finally came up with a version that we were satisfied with.
                     <br /><br />
-                    Of course, our hardest challenge was sleep deprivation and merge conflicts :&rpar;
+                    Of course, our hardest challenge was sleep deprivation and merge conflicts :D
                 </p>
                 </motion.div>
                 <div className="py-10"></div>

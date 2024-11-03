@@ -1,48 +1,41 @@
-/* CherryBlossomPetals.css */
 .petal {
   position: absolute;
-  top: -50px; /* Start above the viewport */
-  width: 15px; /* Width of the petal */
-  height: 15px; /* Height of the petal */
-  background-color: pink; /* Petal color */
-  border-radius: 0%; /* Top rounded and bottom flat */
-  transform: rotate(-20deg); /* Slight tilt to simulate natural petals */
+  top: -50px;
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  border-radius: 0%;
+  transform: rotate(-20deg);
   opacity: 1;
-  animation: fall linear infinite; /* Animation to make petals fall */
+  animation: fall linear infinite;
   }
   
-  /* Keyframes for falling animation */
   @keyframes fall {
     0% {
       transform: translateY(0) rotate(0deg);
-      opacity: 1; /* Fully visible */
+      opacity: 1;
     }
     50% {
-      transform: translateY(1) rotate(180deg); /* Move down */
-      opacity: .5; /* Fade out */
+      transform: translateY(1) rotate(180deg);
+      opacity: .5;
     } 100%
     {
-      transform: translateY(100vh) rotate(-180deg); /* Move down */
-      opacity: 0; /* Fade out */
+      transform: translateY(100vh) rotate(-180deg);
+      opacity: 0;
     }
   }
   
-  /* Styles for the container */
   .petals-container {
-    position: fixed;        /* Keeps the container in place while scrolling */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;           /* Full viewport width */
-    height: 100vh;          /* Full viewport height */
-    overflow: hidden;       /* Prevents petals from overflowing */
-              /* Sends it to the background */
-    pointer-events: none;   /* Prevents it from interfering with clicks */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
     z-index: -10;
   }
-  
-  
-  /* Randomize petal positions and animations */
-/* Randomize petal positions and animations with increased durations */
+
 .petal:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: 0.3s; }
 .petal:nth-child(2) { left: 20%; animation-duration: 10s; animation-delay: 1.7s; }
 .petal:nth-child(3) { left: 30%; animation-duration: 9s; animation-delay: 2.5s; }
@@ -79,4 +72,3 @@
 .petal:nth-child(34) { left: 80%; animation-duration: 9.7s; animation-delay: 1.8s; }
 .petal:nth-child(35) { left: 75%; animation-duration: 8.9s; animation-delay: 4.3s; }
 .petal:nth-child(36) { left: 70%; animation-duration: 10.0s; animation-delay: 0.2s; }
-  /* Add more petals as needed */

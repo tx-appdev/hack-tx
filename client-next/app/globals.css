@@ -8,6 +8,11 @@
     --body:#FFFFFF;
     --petal:pink;
 }
+
+.pin-spacer{
+    height:1250px !important;
+}
+
 * {
     margin: 0;
     padding: 0;

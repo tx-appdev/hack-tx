@@ -18,6 +18,12 @@ const About = () => {
             </div>
             <div className="body-wrapper text-left py-8 px-[10%] max-w-[100%]">
                 <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
+                    Developers
+                </h2>
+                <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
+                    This project was designed by Dylan Nelson, Noel Varghese, Nathan Foo, and Sean Hau Goh for Hack Texas 2024.
+                </p>
+                <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
                     Inspiration
                 </h2>
                 <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">

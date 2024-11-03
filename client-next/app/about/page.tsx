@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/ui/Navbar";
 import About from "@/sections/About";
 
@@ -6,6 +8,7 @@ const AboutPage = () => {
         <>
             <Navbar />
             <About />
+            
         </>
     );
 }

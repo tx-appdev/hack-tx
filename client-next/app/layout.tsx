@@ -15,8 +15,8 @@ export default function RootLayout({
   return (
     <SmoothScroll>
       <html lang="en">
-        <body>
-          {children}
+        <body suppressHydrationWarning={true}>
+            {children}
         </body>
       </html>
     </SmoothScroll>

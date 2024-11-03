@@ -18,6 +18,12 @@ const About = () => {
             </div>
             <div className="body-wrapper text-left py-8 px-[10%] max-w-[100%]">
                 <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
+                    Developers
+                </h2>
+                <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
+                    This project was designed by Dylan Nelson, Noel Varghese, Nathan Foo, and Sean Hau Goh for Hack Texas 2024.
+                </p>
+                <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
                     Inspiration
                 </h2>
                 <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
@@ -27,13 +33,13 @@ const About = () => {
                     What It Does
                 </h2>
                 <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
-                    Indie Studio is designed to empower indie developers to create unique and visually appealing games.     This tool provides developers with AI-generated assets including themes, sprites, and color palettes tailored to their specific needs, and is essential to kickstart new indie applications.
+                    Indie Studio is designed to empower indie developers to create unique and visually appealing games. This tool provides developers with AI-generated assets including themes, sprites, and assets tailored to their specific needs. Users are able to enter a custom prompt to generate retro assets, as well as specify the number of assets needed. After generation, the tool features a live demo using the generated sprites and provides an option to save the new assets.
                 </p>
                 <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
                     What We Learned
                 </h2>
                 <p className="font-[SuperLegend] text-[1.5em] py-8 text-[--body]">
-                    Through this project, we learned to utilize AI and stable diffusion for image generation in a full stack environment. We also learned to implement Python with a Next.js frontend to access powerful tools for backend development. Finally, we improved our front end design skills with horizontal scrolling, falling petal effects, and an aesthetic color palette.
+                    Through this project, we learned to utilize AI and stable diffusion for image generation in a full stack environment. We also learned to implement Python with a Next.js frontend to access powerful tools for backend development, and we improved our front end design skills with horizontal scrolling, falling petal effects, preloader animations, and an aesthetic color palette.
                 </p>
                 <h2 className="font-[Karmatic] text-[3em] text-[--scroll]">
                     How We Built It

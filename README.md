@@ -1,4 +1,4 @@
-# Hack TX 2024 | Indie Studio
+# Hack Texas 2024 | Indie Studio
 
 ### Inspiration
 

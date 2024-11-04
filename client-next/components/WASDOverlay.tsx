@@ -1,10 +1,8 @@
-// components/WASDOverlay.tsx
-
 import Image from "next/image";
-import overlayImg from "../public/WASD.png"; // Replace with the path to your overlay PNG
+import overlayImg from "../public/WASD.png";
 
 interface WASDOverlayProps {
-  scale: number; // Accept scale as a prop
+  scale: number;
 }
 
 export default function WASDOverlay({ scale }: WASDOverlayProps) {

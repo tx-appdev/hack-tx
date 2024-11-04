@@ -12,13 +12,22 @@ headers = {
 
 def createImage(assets):
     for i, asset in enumerate(assets):
-        data = {
-            "text_prompts": [{"text": f"A pixel art sprite of a {asset}. retro video game style.<solo>:5.5"}],
-            "cfg_scale": 9,
-            "steps": 50,
-            "width": 512,
-            "height": 512
-        }
+        if i == 3:
+                data = {
+                "text_prompts": [{"text": f"A pixel art sprite of a {asset}. retro video game style.<solo>:5.5"}],
+                "cfg_scale": 9,
+                "steps": 50,
+                "width": 512,
+                "height": 512
+            }
+        else: 
+            data = {
+                "text_prompts": [{"text": f"A pixel art sprite of a {asset}. retro video game style.<solo>:5.5"}],
+                "cfg_scale": 9,
+                "steps": 50,
+                "width": 512,
+                "height": 512
+            }
 
         response = requests.post(url, headers=headers, json=data)
 

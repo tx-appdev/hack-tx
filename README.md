@@ -28,7 +28,7 @@ Of course, our hardest challenge was sleep deprivation and merge conflicts :)
 
 ### What's Next
 
-We see an endless amount of possibilities for this project. In the future, we hope to add additional functionality to our app such as music and color palette generation alongside our image assets. We also plan to remove the background from the main character sprite in the demo and polish up the UI for the asset generation page. We would like to add drag and drop blocks for assets to place in the demo, so that users can further visualize how all of their ideas can work together for an indie game. Finally, we hope to rework the AI prompting to provide more relevant results based on user input.
+We see an endless amount of possibilities for this project. In the future, we hope to add additional functionality to our app such as music and color palette generation alongside our image assets. We also plan to remove the background from the main character sprite in the demo and polish up the UI for the asset generation page. We would like to add drag and drop blocks to place assets in the demo, so that users can further visualize how all of their ideas can work together for an indie game. Finally, we hope to rework the AI prompting to provide more relevant results based on user input.
 
 ### Project Submission
 

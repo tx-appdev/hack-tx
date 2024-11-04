@@ -1,16 +1,13 @@
-// components/Platformer.tsx
-
 import { useState, useEffect, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import WASDOverlay from "./WASDOverlay";
 
 interface PlatformerProps {
-  characterImg: StaticImageData; // Image for character sprite
-  backgroundImg: StaticImageData; // Image for background
-  groundImg: StaticImageData; // Image for ground
+  characterImg: StaticImageData;
+  backgroundImg: StaticImageData;
+  groundImg: StaticImageData;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Platformer({ characterImg, backgroundImg, groundImg }: PlatformerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [position, setPosition] = useState({ x: 200, y: 400 });
@@ -25,12 +22,12 @@ export default function Platformer({ characterImg, backgroundImg, groundImg }: P
     if (!isPlaying) return;
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      event.preventDefault(); // Prevent default behavior
+      event.preventDefault();
       setKeys((prev) => ({ ...prev, [event.key]: true }));
 
       if (event.key === "w" && !isJumping) {
         setIsJumping(true);
-        setVelocityY(-15); // Jump velocity
+        setVelocityY(-15);
       }
     };
 
@@ -57,7 +54,6 @@ export default function Platformer({ characterImg, backgroundImg, groundImg }: P
       setPosition((prev) => {
         const newY = prev.y + velocityY;
 
-        // Allow horizontal movement based on key states
         if (keys["d"]) {
           setPosition((prev) => ({ ...prev, x: Math.min(prev.x + 7, window.innerWidth - 159) }));
         }
@@ -65,8 +61,7 @@ export default function Platformer({ characterImg, backgroundImg, groundImg }: P
           setPosition((prev) => ({ ...prev, x: Math.max(prev.x - 7, 94) }));
         }
 
-        // Check if the character has landed on the ground
-        if (newY >= groundLevel - 50) { // Assuming character is 50px high
+        if (newY >= groundLevel - 50) {
           setIsJumping(false);
           return { ...prev, y: groundLevel - 50 };
         }
@@ -79,20 +74,18 @@ export default function Platformer({ characterImg, backgroundImg, groundImg }: P
 
   const handlePlayClick = () => {
     setIsPlaying(true);
-    // Start oscillation on play button click
-    setOverlayScale(1); // Reset scale
+    setOverlayScale(1);
     const intervalId = setInterval(() => {
-      setOverlayScale((prev) => (prev === 1 ? 1.05 : 1)); // Toggle between 1 and 1.05
-    }, 300); // Change size every 300ms
+      setOverlayScale((prev) => (prev === 1 ? 1.05 : 1));
+    }, 300);
 
-    // Clear interval when not playing anymore
     return () => clearInterval(intervalId);
   };
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gray-900">
-      {/* Remove borders when playing */}
-      <div className={`absolute overflow-hidden transition-border duration-500 ease inset-0 flex items-center justify-center ${isPlaying ? 'border-0' : 'border-l-[100px] border-r-[100px] border-t-10 border-b-10 border-black'}`}>        <Image
+      <div className={`absolute overflow-hidden transition-border duration-500 ease inset-0 flex items-center justify-center ${isPlaying ? 'border-0' : 'border-l-[100px] border-r-[100px] border-t-10 border-b-10 border-black'}`}>
+        <Image
           src={backgroundImg}
           alt="Background"
           layout="fill"

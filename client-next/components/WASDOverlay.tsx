@@ -18,4 +18,3 @@ export default function WASDOverlay({ scale }: WASDOverlayProps) {
     </div>
   );
 }
-
